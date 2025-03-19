@@ -11,14 +11,15 @@ public class CategoriaMMA {
 		
 		//ENTRADA DE DADOS
 		Scanner ler = new Scanner(System.in);
-		System.out.println("Informe o seu sexo (M ou F): ");
+		System.out.println("Informe o seu sexo (Masculino/Feminino): ");
 		sexo = ler.next();
 		System.out.println("Informe seu peso em kg: ");
 		peso = ler.nextDouble();
 		
 		//PROCESSAMENTO E SAÍDA
-		if (sexo == "M");
-		else if (peso > 93.0) {
+		if (sexo.equals("Masculino"))
+		{
+		if (peso > 93.0) {
 			System.out.println("Peso pesado");
 		}
 		else if (peso >= 84.0) {
@@ -42,9 +43,10 @@ public class CategoriaMMA {
 		else {
 			System.out.println("Peso Mosca");
 		}
-		
-		if (sexo == "F");
-		else if (peso > 61.2) {
+		}
+		if (sexo.equals("Feminino")) 
+		{
+		if (peso > 61.2) {
 			System.out.println("Peso pena");
 		}
 		else if (peso >= 56.8) {
@@ -56,7 +58,7 @@ public class CategoriaMMA {
 		else {
 			System.out.println("Peso palha");
 		}
-		
+		}
 		ler.close();
 			
 	}
